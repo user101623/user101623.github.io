@@ -2,27 +2,55 @@
 <html>
   <head>
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="about">
       <div class="main">
-        <img src="img/main.png" />
+        <img src="img/main.jpg" />
         <div class="about-text">
-          <h1>About Me</h1>
+          <h2>~~ About Me ~~</h2>
           <h2>Wei Jin Gnoh</h2>
-          <h4><span>Pro</span>grammer</h4>
+          <h4>
+            <span class="sa-first">Pro</span
+            ><span class="sa-second">grammer</span>
+          </h4>
           <p>
-            I am a programmer. I can provide clean code and efficient code. I am ready and looking forward to a new challenge and great opportunity in
-            the near future.
+            I am a programmer. I can provide clean and efficient code. I am
+            ready and looking forward to a new challenge and great opportunity
+            in the near future. I mainly code in C++, but I do know some other
+            programming languages such as Java and Python.
           </p>
-          <button type="button">Let's Talk</button>
+
+          <button type="button" class="button" href="#" onclick="show('popup')">
+            Let's Talk
+          </button>
+
+          <div class="popup" id="popup">
+            <p>Email me at wxgnoh@shockers.wichita.edu</p>
+            <a id="shut" href="#" onclick="hide('popup')">Close this popup</a>
+          </div>
+
+          <script>
+            $ = function (id) {
+              return document.getElementById(id);
+            };
+
+            var show = function (id) {
+              $(id).style.display = "block";
+            };
+            var hide = function (id) {
+              $(id).style.display = "none";
+            };
+          </script>
+
         </div>
       </div>
     </section>
