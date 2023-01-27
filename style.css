@@ -100,17 +100,6 @@ button:hover {
   z-index: 20;
 }
 
-#popup:after {
-  position: fixed;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: -2;
-}
-
 #popup:before {
   position: absolute;
   content: "";
@@ -120,6 +109,17 @@ button:hover {
   right: 0;
   background: #191919;
   z-index: -1;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
 }
 
 body {
