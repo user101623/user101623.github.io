@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Me</title>
+    <title>Wei Jin</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,41 +16,45 @@
       <div class="main">
         <img src="img/main.jpg" />
         <div class="about-text">
-          <h2>~~ About Me ~~</h2>
-          <h2>Wei Jin Gnoh</h2>
+          <h1>
+            <span class="sa-one">About</span>
+            <span class="sa-two">Me</span>
+          </h1>
+          <h2>
+            <span class="sa-first">Wei</span>
+            <span class="sa-second">Jin</span>
+            <span class="sa-third">Gnoh</span>
+          </h2>
           <h4>
-            <span class="sa-first">Pro</span
-            ><span class="sa-second">grammer</span>
+            <span class="sa-fourth">Stu</span><span class="sa-fifth">dent</span>
           </h4>
           <p>
-            I am a programmer. I can provide clean and efficient code. I am
-            ready and looking forward to a new challenge and great opportunity
-            in the near future. I mainly code in C++, but I do know some other
-            programming languages such as Java and Python.
+            I am a passionate Computer Science major who is currently studying
+            in WSU. I mainly code in C++, but I do know some other programming
+            languages such as Java and Python.
           </p>
 
-          <button type="button" class="button" href="#" onclick="show('popup')">
-            Let's Talk
-          </button>
+          <button type="button" class="button" id="talk-btn">Let's Talk</button>
 
           <div class="popup" id="popup">
             <p>Email me at wxgnoh@shockers.wichita.edu</p>
-            <a id="shut" href="#" onclick="hide('popup')">Close this popup</a>
+            <a id="shut" href="#" onclick="hidePopup()">Close this popup</a>
           </div>
 
           <script>
-            $ = function (id) {
-              return document.getElementById(id);
-            };
+            const talkBtn = document.getElementById("talk-btn");
+            const popup = document.getElementById("popup");
 
-            var show = function (id) {
-              $(id).style.display = "block";
-            };
-            var hide = function (id) {
-              $(id).style.display = "none";
-            };
+            talkBtn.addEventListener("click", () => {
+              popup.style.display = "block";
+            });
+
+            const shut = document.getElementById("shut");
+
+            shut.addEventListener("click", () => {
+              popup.style.display = "none";
+            });
           </script>
-
         </div>
       </div>
     </section>

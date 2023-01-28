@@ -21,7 +21,7 @@
 }
 
 .main {
-  width:1130px;
+  width: 1130px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
@@ -30,15 +30,17 @@
 }
 
 .about-text h1 {
-  color: white;
-  font-size: 80px;
+  color: rgb(117, 18, 93);
+  font-family: "Coolvetica";
+  font-size: 30px;
+  letter-spacing: 4px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .about-text h2 {
-  color: white;
-  font-size: 25px;
+  font-family: "Coolvetica";
+  font-size: 35px;
   text-transform: capitalize;
   margin-bottom: 25px;
   letter-spacing: 2px;
@@ -46,22 +48,42 @@
 
 .about-text h4 {
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   text-transform: capitalize;
   margin-bottom: 25px;
   letter-spacing: 2px;
 }
 
+.sa-one {
+  color: #6c2337;
+}
+
+.sa-two {
+  color: #9b334f;
+}
+
 .sa-first {
-  color: #be033ed5;
+  color: #9336cc;
 }
 
 .sa-second {
-  color:#f3306ed5;
+  color: #8430b7;
+}
+
+.sa-third {
+  color: #9336cc;
+}
+
+.sa-fourth {
+  color: #be033ed5;
+}
+
+.sa-fifth {
+  color: #f3306ed5;
 }
 
 .about-text p {
-  color: #fcfc;
+  color: white;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 22px;
@@ -88,16 +110,28 @@ button:hover {
 .popup {
   display: none;
   position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(15%, 10%);
   padding: 10px;
   width: 350px;
-  left: 50%;
-  margin-left: -150px;
   height: auto;
-  top: 50%;
-  margin-top: -100px;
-  background: rgb(0, 0, 0);
+  background: #191919;
   border: 3px solid #3c0652;
-  z-index: 20;
+  z-index: 1;
+  font-size: 25px;
+  text-align: center;
+}
+
+.popup p {
+  color: #fcfc;
+  margin-bottom: 10px;
+}
+
+.popup a {
+  color: #fcfc;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #popup:before {
@@ -118,7 +152,7 @@ button:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -2;
 }
 
@@ -129,6 +163,6 @@ body {
 }
 
 p {
-	margin: 1em 0;
+  margin: 1em 0;
   font-size: 16px;
 }
